@@ -416,6 +416,8 @@ output/CertWatcher/
 
 ## 定期実行
 
+会社PC（Windows）へ導入する場合は、zip入手 → 配置 → 台帳作成 → タスク登録までをまとめた [INSTALL-windows.md](INSTALL-windows.md) を参照してください。タスク登録は `scripts/register-task.ps1` で自動化できます（配布zipの作成は `scripts/package-release.sh`）。
+
 ### Windows タスクスケジューラ
 
 PowerShell（管理者）で、毎朝 8:00 に Edge をチェックする例:
@@ -470,10 +472,14 @@ go test ./...     # ユニットテスト
 ```
 cert-watcher/
   README.md
+  INSTALL-windows.md                # 会社PC(Windows)への導入手順
+  LICENSE
   Dockerfile
   .dockerignore
   go.mod
   config/targets.csv
+  scripts/register-task.ps1         # タスクスケジューラ登録スクリプト
+  scripts/package-release.sh        # Windows向け配布zip作成
   cmd/cert-watcher/main.go          # CLI エントリポイント
   internal/checker/tls_checker.go   # TLS 接続・証明書取得・CheckMode
   internal/model/target.go          # 入力 CSV / Target 定義
