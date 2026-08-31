@@ -1,0 +1,4 @@
+service_name,edge_fqdn,origin_host,origin_sni,owner,vendor,notes
+Example Site,example.com,example.com,example.com,platform-team,Akamai,公開サンプル（Edge/Origin同一ホスト）
+Google,www.google.com,www.google.com,www.google.com,web-team,Akamai,到達確認用サンプル
+Unreachable Sample,no-such-host.invalid,no-such-host.invalid,no-such-host.invalid,ops-team,Akamai,接続失敗(ERROR)の動作確認用

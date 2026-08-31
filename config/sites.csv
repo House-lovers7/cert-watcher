@@ -1,0 +1,4 @@
+service_id,service_name,edge_fqdn,owner,vendor,notes,business_impact,enabled
+example,Example Site,example.com,platform-team,Akamai,公開サンプル,低,true
+google,Google,www.google.com,web-team,Akamai,到達確認用サンプル,低,true
+unreachable,Unreachable Sample,no-such-host.invalid,ops-team,Akamai,接続失敗(ERROR)の動作確認用,低,true

@@ -1,0 +1,7 @@
+{
+  "check": "both",
+  "timeout": "10s",
+  "warn_days": 30,
+  "critical_days": 14,
+  "urgent_days": 7
+}

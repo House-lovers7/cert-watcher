@@ -1,0 +1,9 @@
+# ビルドに不要なものを除外してコンテキストを小さく保つ
+output/
+*.exe
+cert-watcher
+cert-watcher-linux
+cert-watcher-mac
+.git/
+.gitignore
+README.md

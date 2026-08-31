@@ -1,0 +1,3 @@
+service_id,kind,action_status,action_owner,vendor_ticket,due_date,comment
+example,Edge,確認中,platform-team,TICKET-100,2026-07-01,更新予定確認中
+unreachable,Edge,管理者確認,ops-team,TICKET-101,2026-06-30,到達性を確認

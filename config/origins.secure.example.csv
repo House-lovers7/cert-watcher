@@ -1,0 +1,4 @@
+service_id,origin_host,origin_sni,origin_port,check_location,site_shield,entered_by,source,last_reviewed_at,notes_private
+example,example.com,example.com,443,sample,no,sample,Akamai設定サンプル,2026-06-23,sample only
+google,www.google.com,www.google.com,443,sample,no,sample,到達確認用サンプル,2026-06-23,sample only
+unreachable,no-such-host.invalid,no-such-host.invalid,443,sample,no,sample,接続失敗サンプル,2026-06-23,sample only
