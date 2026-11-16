@@ -309,13 +309,13 @@ corp,Edge,確認中,情シス,TICKET-124,2026-07-05,更新予定確認中
 | ステータス | 条件 |
 |------------|------|
 | `OK` | 残日数 31 日以上 |
-| `WARN` | 残日数 30 日未満 |
+| `WARN` | 残日数 30 日以下 |
 | `CRITICAL` | 残日数 14 日未満 |
 | `URGENT` | 残日数 7 日未満 |
 | `EXPIRED` | 期限切れ |
 | `ERROR` | 接続不可・証明書取得失敗 |
 
-しきい値は `--warn-days` / `--critical-days` / `--urgent-days` で変更できます（判定は「未満」）。
+しきい値は `--warn-days` / `--critical-days` / `--urgent-days` で変更できます（判定は URGENT・CRITICAL が「未満」、WARN が「以下」）。
 
 レポートは重大度の高い順（`ERROR` / `EXPIRED` / `URGENT` / `CRITICAL` を上位 → `WARN` → `OK`）に並び、同ステータス内は残日数の少ない順です。
 
